@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Portfolio</title>
+  <link rel="shortcut icon" href="fevicon/android-chrome-192x192.png" type="image/x-icon">
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> 
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+</head>
+<body>
+  <div class="container">
+      <div class="firstline">
+        <header>
+          <nav class="navbar">
+              <div class="logo">
+                  <a href="index.html"><img src="src/images/logo.png" alt=""></a>
+              </div>
+              <div><button id="contactButton">Contact Us</button></div>
+          </nav>
+          
+      </header>
+      
+      <div class="modal" id="contactModal">
+          <div class="modal-content">
+              <span class="close" id="closeModal">&times;</span>
+              <h2>Contact Us</h2>
+              <form id="contactForm">
+                  <label for="name">Name:</label>
+                  <input type="text" id="name" required>
+                  
+                  <label for="email">Email:</label>
+                  <input type="email" id="email" required>
+                  
+                  <label for="phone">Phone Number:</label>
+                  <input type="tel" id="phone" required>
+                  
+                  <label for="description">Description:</label>
+                  <textarea id="description" required></textarea>
+                  
+                  <button type="submit">Submit</button>
+              </form>
+          </div>
+      </div>
+    
+    
+    <div class="hero">
+      <section id="header">
+        
+        <div id="home" class="text-box">
+          <h1 class="mainhead" style="  font-family: 'Roboto', sans-serif;">Hi ! I'm Photographer</h1>
+          <p style=" line-height: 25px";>I am a photographer who enjoys capturing<br>I like photographing landscapes, people, animals, and beautiful sceneries</p>
+          <div id="hiddenText" class="text-box">
+            <p>My love for photography knows no bounds, as I find inspiration in the diversity of the world around me. From the quiet serenity of a forest at dawn to the vibrant energy of a bustling city street, every setting offers a wealth of visual opportunities to explore and capture. Through my work, I hope to share the wonder and beauty I see in the world with others.
+            My photography journey is an ongoing adventure, with each click of the shutter revealing new perspectives and stories waiting to be told. Whether I'm on a remote expedition to capture the grandeur of untouched wilderness, documenting the intricate details of a bustling urban environment, or simply taking candid shots of friends and family, my camera is my constant companion, ready to seize the moment and create lasting memories.</p>
+          </div>
+        <a href="#" class="hero-btn" id="toggleButton">Show More..</a>
+      </div>
+      </section>
+    </div>
+
+    <div class="mainhero">
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+
+<img src="src/images/1horse.jpg" style="width:100%" loading="lazy">
+
+</div>
+
+<div class="mySlides fade">
+
+<img src="src/images/8mountain.jpg" style="width:100%" loading="lazy">
+<div class="text">Caption Two</div>
+</div>
+
+<div class="mySlides fade">
+<div class="numbertext">3 / 10</div>
+<img src="src/images/2water.jpg" style="width:100%" loading="lazy">
+</div>
+
+<div class="mySlides fade">
+<img src="src/images/3pyramid.jpg" style="width:100%" loading="lazy">
+</div>
+
+
+
+<div class="mySlides fade">
+<img src="src/images/5flower.jpg" style="width:100%">
+</div>
+<div class="mySlides fade">
+  <img src="src/images/6man.jpg" style="width:100%">
+  </div>
+  <div class="mySlides fade">
+    <img src="src/images/7girl.jpg" style="width:100%">
+    </div>
+    <div class="mySlides fade">
+      <img src="src/images/9bridge.jpg" style="width:100%">
+      </div>
+      <div class="mySlides fade">
+        <img src="src/images/10last.jpg" style="width:100%">
+        </div>
+        <div class="btn">
+          <a class="prev" onclick="plusSlides(-1)">&#10094; </a>
+          <br>
+         <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+    </div>
+
+<div class="cards-collection">
+
+  <div class="cards">
+    <div class="card" id="potrait"><img class="project-2-img" src="src/images/portrait.jpg" loading="lazy"><div>
+      <button id="portrait" class="project-btn">BOOK PORTRAIT</button>
+                </div></div>
+
+  <div class="card" id="wedding"><img class="project-2-img" src="src/images/wedding.jpg" loading="lazy"><div>
+    <button id="wedding" class="project-btn">BOOK WEDDING</button>
+</div></div>
+
+<div class="card" id="landscape"><img class="project-2-img" src="src/images/landscape.jpg" loading="lazy"><div>
+  <button id="landscape" class="project-btn">BOOK LANDSCAPE</button>
+</div></div>
+
+<div class="card" id="party"><img class="project-2-img" class="project-2-img" src="src/images/party.jpg" loading="lazy"><div>
+  <button id="party" class="project-btn">BOOK PARTY</button>
+</div></div>  
+
+<div class="card" id="corporate"><img class="project-2-img" src="src/images/corporate.jpg" loading="lazy"><div>
+  <button id="corporate" class="project-btn">BOOK CORPORATE</button>
+</div></div>
+
+<div class="card" id="baby"><img class="project-2-img" src="src/images/babyny.jpg" loading="lazy"><div>
+  <button id="children" class="project-btn">BOOK CHILDREN</button>
+</div>
+</div>
+
+
+</div>
+
+</div>
+
+<div class="modal" id="bookingModal">
+  <div class="modal-content">
+      <span class="close" id="closeBookingModal">&times;</span>
+      <h2>Book Your Session</h2>
+      <form id="bookingForm">
+          <label for="name">Name:</label>
+          <input type="text" id="bookingName" required>
+
+          <label for="phone">Phone Number:</label>
+          <input type="tel" id="bookingPhone" required>
+
+          <label for="email">Email:</label>
+          <input type="email" id="bookingEmail" required>
+
+          <label for="date">Date:</label>
+          <input type="date" id="bookingDate" required>
+
+          <label for="duration">Duration (hours):</label>
+          <input type="number" id="bookingDuration" required>
+
+          <label for="location">Location:</label>
+          <input type="text" id="bookingLocation" required>
+
+          <button type="submit">Submit</button>
+      </form>
+  </div>
+</div>
+
+
+
+    
+<footer>
+  <div class="footer-content">
+      <h2>Stack Sync</h2>
+      <p>Photographer Extraordinaire</p>
+
+      <div class="contact-info">
+          <p>Contact: <span>7019291068</span></p>
+          <p>Email: <span>Emptybin@hotmail.com</span></p>
+          <p>Location: <span>Bhatkal</span></p>
+      </div>
+
+      <div class="social-media">
+          <a href="https://www.instagram.com/YourInstagramHandle" target="_blank">
+              <i class="fab fa-instagram"></i> <!-- Instagram Font Awesome icon -->
+          </a>
+          <a href="https://www.facebook.com/YourFacebookPage" target="_blank">
+              <i class="fab fa-facebook-f"></i> <!-- Facebook Font Awesome icon -->
+          </a>
+          <a href="https://twitter.com/YourTwitterHandle" target="_blank">
+              <i class="fab fa-twitter"></i> <!-- Twitter Font Awesome icon -->
+          </a>
+      </div>
+  </div>
+
+  <div class="copyright">
+      <p>&copy; <span id="current-year">2023</span> Stack Sync. All Rights Reserved.</p>
+  </div>
+</footer>
+
+  </div>
+  </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

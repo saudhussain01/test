@@ -1,0 +1,462 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  background-color: #232B2B;
+  width: 100%;
+  height: 100%;
+}
+
+.logo img {
+  width: 250px;
+  border-radius: 10px;
+  background-color: #232B2B;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between; /* This pushes logo and button to the ends */
+  align-items: center;
+  padding: 10px;
+  
+}
+#contactButton{
+margin-right: 70px;
+border-radius: 5px;
+}
+.logo img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin-left: 40px;
+}
+
+#home {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+}
+
+.mainhead {
+  font-size: xx-large;
+  font-weight: bolder;
+  width: 80%;
+  line-height: 25px;
+  font-family: 'Roboto', sans-serif;
+  padding-bottom: 20px;
+}
+
+#hiddenText {
+  display: none;
+  width: 80%;
+  text-align: justify;
+  line-height: 25px;
+}
+
+#toggleButton {
+  display: inline-block;
+}
+
+.btn {
+  cursor: pointer;
+}
+
+.slideshow-container {
+  padding-top: 2em;
+  padding-bottom: 3em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 80%; /* Limit the width to 80% of the container */
+  margin: 0 auto; /* Center the container horizontally */
+}
+
+.mySlides {
+  width: 70%; /* Set the width to 80% of the container */
+  max-width: 700px; /* Set a maximum width for the images */
+  margin: 0 auto; /* Center the images horizontally */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 40.25%; /* 16:9 aspect ratio (9 / 16 * 100%) */
+  position: relative;
+}
+
+.mySlides img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 7px;
+}
+.prev{
+  position: absolute;
+  left: 200px;
+}
+.next{
+  position: absolute;
+  right: 200px;
+  
+}
+
+.prev,
+.next {
+  position: absolute;
+  top: 21em; /* Position vertically in the middle of the slideshow container */
+  transform: translateY(-50%); /* Vertically center the buttons */
+  font-size: 24px; /* Adjust the font size to increase button size */
+  color: white; /* Change the button color */
+  background-color: rgba(0, 0, 0, 0.3); /* Add a semi-transparent background */
+  padding: 10px 20px; /* Adjust the padding to increase button size */
+  border-radius: 5px; /* Add some rounded corners */
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* Add a smooth hover effect */
+}
+
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.6); /* Darken the background on hover */
+}
+.card {
+  background-color: #3D3C3A;
+  color: white;
+  padding: 1rem;
+  height: 13rem;
+  font-size: 2rem;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 120;
+  border-radius: 5px;
+}
+
+
+.card img{
+  width: 100%;
+  border-radius: 4px;   
+  object-fit: contain;
+  object-fit: cover;     
+}
+.cards {
+  max-width: 1000px;
+  margin: 0 auto;
+  display: grid;
+  grid-gap: 0.5rem;
+  border-radius: 5px;
+}
+@media (min-width: 600px) {
+  .cards { grid-template-columns: repeat(2, 1fr); }
+  
+   
+  
+}
+
+@media (max-width: 600px) {
+  .cards { grid-template-columns: repeat(1, 1fr); }
+  .card {
+          height: 360px;
+  }
+
+  .card h2 {
+          font-size: 10px;
+  }
+  .card img{
+    height:350px;       
+}
+
+.project-btn{
+        margin-left:95px;
+}
+}
+
+
+
+  
+@media (min-width: 800px) {
+  .cards { grid-template-columns: repeat(2, 1fr); }
+  .card {
+          height: 300px;
+  }
+  
+  
+   
+  
+}
+
+/* Screen larger than 900px? 3 columns */
+@media (min-width: 900px) {
+  .cards { grid-template-columns: repeat(3, 1fr); }
+  .card {
+          height: 300px;
+  }
+}
+.project-2-img{
+  height: 76%;
+  
+}
+
+.card img:hover{
+  opacity: 80%;
+  
+}
+.bottomline{
+width: 100%;
+text-align: center;
+}
+.project-btn {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 10px;
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #525252;
+    padding: 12px 34px;
+    font-size: 13px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+    transition: 1s;
+    background-color: #525252;
+    border-radius: 20px;
+    font-family: 'Roboto', sans-serif;
+}
+.project-btn:hover{
+    border: 1px solid #363636;
+    background: #363636;
+}
+
+/* Style the entire footer */
+footer {
+  margin-top: 2em;
+  background-color:#232B2B ; /* Background color for the footer */
+  color: #fff; /* Text color for the footer */
+  padding: 20px; /* Add spacing inside the footer */
+}
+
+/* Style the footer content */
+.footer-content {
+  text-align: center;
+}
+
+/* Style the header and description */
+.footer-content h2 {
+  font-size: 24px; /* Adjust the header font size */
+  margin: 0;
+}
+
+.footer-content p {
+  font-size: 16px; /* Adjust the description font size */
+  margin: 5px 0;
+}
+
+/* Style the contact information */
+.contact-info {
+  margin-top: 20px;
+}
+
+.contact-info p {
+  font-size: 16px; /* Adjust the contact info font size */
+  margin: 5px 0;
+}
+
+.contact-info span {
+  font-weight: bold;
+}
+
+/* Style the social media icons */
+.social-media {
+  margin-top: 20px;
+}
+
+.social-media a {
+  color: #fff; /* Icon color */
+  font-size: 24px; /* Icon size */
+  margin: 0 10px; /* Spacing between icons */
+  text-decoration: none;
+}
+
+/* Style the copyright notice */
+.copyright {
+  margin-top: 20px;
+}
+
+.copyright p {
+  font-size: 14px; /* Adjust the copyright font size */
+  margin: 0;
+  text-align: center;
+}
+
+/* Style the current year */
+#current-year {
+  font-weight: bold;
+}
+
+
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.7);
+  z-index: 10;
+}
+
+.modal-content {
+  background-color: #fff;
+  margin: 10% auto;
+  padding: 20px;
+  width: 70%;
+  border-radius: 5px;
+  z-index: 10;
+}
+
+.close {
+  float: right;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+
+form {
+  display: grid;
+  grid-gap: 10px;
+}
+
+label, input, textarea {
+  width: 100%;
+}
+
+button {
+  background-color: #1c1d1e;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+} 
+ 
+
+@media (min-width: 321px) and (max-width: 480px){
+  .logo img {
+    width: 150px;
+    border-radius: 20px;
+    background-color: #232B2B;
+  }
+  .navbar {
+    display: flex;
+    justify-content: space-between; /* This pushes logo and button to the ends */
+    align-items: center;
+    padding: 4px;
+    
+  }
+  #contactButton{
+    margin-right: 60px;
+    border-radius: 5px;
+    }
+    .logo img {
+      display: block;
+      max-width: 100%;
+      height: auto;
+      margin-left: 40px;
+    }
+    
+    
+    .mainhead {
+      font-size: x-large;
+      font-weight: bolder;
+      width: 80%;
+      line-height: 10px;
+      font-family: 'Roboto', sans-serif;
+      padding-bottom: 10px;
+      padding-top: 10px;
+    }
+    
+    #hiddenText {
+      display: none;
+      width: 80%;
+      text-align: justify;
+      line-height: 25px;
+    }
+.prev,
+.next {
+  position: absolute;
+  top: 38em; /* Position vertically in the middle of the slideshow container */
+  transform: translateY(-50%); /* Vertically center the buttons */
+  font-size: 10px; /* Adjust the font size to increase button size */
+  color: white; /* Change the button color */
+  background-color: rgba(0, 0, 0, 0.3); /* Add a semi-transparent background */
+  padding: 5px 10px; /* Adjust the padding to increase button size */
+  border-radius: 5px; /* Add some rounded corners */
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* Add a smooth hover effect */
+}
+.prev{
+  left: 3%;
+}
+.next{
+  right: 3%;
+}
+.card img{
+ 
+  border-radius: 6px;    
+  object-fit: contain;
+  object-fit: cover;  
+  height: 300px;
+  width: 300px;
+
+}
+.cards {
+ 
+  margin: 0 auto;
+  display: grid;
+  grid-gap: 0.5rem;
+  border-radius: 8px;
+  object-fit: contain;
+  object-fit: cover;  
+}
+.slideshow-container {
+  padding-top: 2em;
+  padding-bottom: 3em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 80%; /* Limit the width to 80% of the container */
+  margin: 0 auto; /* Center the container horizontally */
+}
+
+.mySlides {
+  height: 15em;
+  width: 90%; /* Set the width to 80% of the container */
+   /* Set a maximum width for the images */
+  margin: 0 auto; /* Center the images horizontally */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 40.25%; /* 16:9 aspect ratio (9 / 16 * 100%) */
+  position: relative;
+}
+
+.mySlides img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 7px;
+}
+}
